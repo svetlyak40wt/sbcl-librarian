@@ -17,6 +17,7 @@
   (:type expr-type error-type)
   (:literal "/* functions */")
   (:function
+   (start-slynk-server :void ((port :int)))
    (int-literal expr-type ((value :int)))
    (int-literal-value :int ((expr expr-type)))
    (int-literal-p :bool ((obj expr-type)))

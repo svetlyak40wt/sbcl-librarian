@@ -14,6 +14,8 @@ int main(int argc, char **argv) {
   char source[256];
   printf("> ");
 
+  calc_start_slynk_server(5007);
+
   while (fgets(source, sizeof(source), stdin) != NULL) {
     expr_type expr;
     if (calc_parse(source, &expr) != ERR_SUCCESS)

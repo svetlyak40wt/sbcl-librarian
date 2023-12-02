@@ -96,3 +96,8 @@
            (cond ((%zerop simpl-left) simpl-right)
                  ((%zerop simpl-right) simpl-left)
                  (t (sum-expression simpl-left simpl-right)))))))))
+
+
+(defun start-slynk-server (port)
+  (slynk:create-server :port port
+		       :interface "localhost"))

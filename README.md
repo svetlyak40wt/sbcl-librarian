@@ -17,7 +17,7 @@ export SBCL_SRC=~/.roswell/src/sbcl-2.2.4
 cd examples/libcalc
 make
 
-./example
+LD_LIBRARY_PATH=`pwd` ./example
 ```
 
 which creates a shared library and executable using the functions
